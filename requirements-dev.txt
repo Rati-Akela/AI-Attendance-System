@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8
+scikit-image>=0.22   # bundled sample photo with a real face, used by the tests
+ruff>=0.6

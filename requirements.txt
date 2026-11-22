@@ -1,2 +1,8 @@
-flask
-gunicorn
+streamlit>=1.50,<2
+numpy>=1.26
+pandas>=2.1
+Pillow>=10.1
+# Prebuilt dlib wheels (no C++ compiler / cmake needed, unlike plain `dlib`).
+dlib-bin>=19.24
+# Ships the pretrained detector / landmark / face-embedding weights used by snapclass.faces.
+face-recognition-models>=0.3.0

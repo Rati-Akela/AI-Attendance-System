@@ -1,0 +1,13 @@
+services:
+  snapclass:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      SNAP_DEMO_MODE: "1"          # remove for a private deployment
+      SNAP_TIMEZONE: "Asia/Kolkata"
+    volumes:
+      - snapclass-data:/data       # keeps the SQLite database across restarts
+
+volumes:
+  snapclass-data:
